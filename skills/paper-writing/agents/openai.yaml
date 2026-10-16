@@ -1,0 +1,5 @@
+interface:
+  display_name: "Paper Writing"
+  short_description: "Build scientific arguments from claims and figures"
+policy:
+  allow_implicit_invocation: true

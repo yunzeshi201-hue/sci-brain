@@ -61,6 +61,9 @@ Turns an idea into a machine-checkable research campaign: choose topics with sco
 
 | Skill | What it does |
 |-------|--------------|
+| `/paper-reading` | Read one paper through its figure-by-figure argument, evaluate evidence and contribution, and maintain evolving learning notes |
+| `/paper-writing` | Turn reading lessons into a defensible contribution, claim-to-evidence plan, purposeful figure sequence, and manuscript |
+| `/yunzeshi-qubit-measurement` | Plan evidence-based spectroscopy and spin-resonance measurements for lanthanide and molecular spin qubits |
 | `/download-ref` | Add arXiv IDs / DOIs to the KB — fetches metadata, PDFs, and renders full text |
 | `/paper-reviewer` | Review an existing manuscript against writing guidelines; verifies references |
 | `/figure-taste` | Score a figure's visual design against an 18-rule rubric |
@@ -68,6 +71,8 @@ Turns an idea into a machine-checkable research campaign: choose topics with sco
 | `/know-me-better` | Index your Zotero / PDF folder / Google Scholar collection into the KB |
 | `/conversation-dump` | Extract and classify research conversations from Claude Code or Codex histories |
 | `/incarnate` | Import JSONL or Markdown conversations, distill thinking patterns, and capture a reusable advisor profile |
+
+The paired `paper-reading` and `paper-writing` skills support close reading and learning how to build scientific arguments. They complement the existing `paper-writer` manuscript workflow. The reading skill explains what each main figure shows and why it is needed, tracks questions and unresolved confusion, and refines both methods when discussions reveal transferable lessons. It evaluates importance, originality, evidential strength, explanatory depth, scope, and clarity without treating venue prestige as proof. Its [evaluation framework](skills/paper-reading/references/evaluation-framework.md) and the writing skill's [argument-plan template](skills/paper-writing/references/manuscript-plan-template.md) are reusable resources.
 
 ## Where Things Are Saved
 
@@ -87,6 +92,7 @@ Everything lands in one folder inside your project:
 - **Advisor knowledge bases** — `advisors/<slug>/.knowledge/` — each advisor's private literature cache, same layout.
 - **Conversation logs** — `docs/discussion/` — timestamped per session; the next session picks up where you left off.
 - **Ideas reports** — `articles/` in your current directory, with a matching `.bib` file.
+- **Personal reading journals** - `reading-notes/`: one learning profile plus one note per paper; gitignored. These supplement the canonical `.knowledge/` literature and bibliography rather than replacing it.
 
 ## Want to Become an Advisor?
 
