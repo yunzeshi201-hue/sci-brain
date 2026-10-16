@@ -1,0 +1,5 @@
+interface:
+  display_name: "Paper Reading"
+  short_description: "Read figure logic and assess scientific evidence"
+policy:
+  allow_implicit_invocation: true
